@@ -179,12 +179,7 @@ h2 {
     cursor: pointer;
     gap: 10px;
 }
-  
-.button-research:hover {
-    background-color: #003c96;
-    transition: ease 0.3s;
-}
-  
+
 #icon-glass {
     display: none;
 }
