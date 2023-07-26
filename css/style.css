@@ -237,24 +237,28 @@ h5, ul, li {
     width: 22px;
     height: 22px;
     padding: 2.86956524848938px 0px 2.8695666790008545px 0px;
+    color: #0065fc;
 }
 
 .fa-person {
     width: 22px;
     height: 22px;
     padding: 0px 4.5555572509765625px 0px 4px;
+    color: #0065fc;
 }
 
 .fa-heart {
     width: 22px;
     height: 22px;
     padding: 2px 0px 1.666666030883789px 0px;
+    color: #0065fc;
 }
 
 .fa-fire {
     width: 22px;
     height: 22px;
     padding: 1px 1.503173828125px 0.9230747222900391px 2.496826171875px;
+    color: #0065fc;
 }
 
 .barre_filtre li:hover {
