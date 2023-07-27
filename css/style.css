@@ -57,7 +57,7 @@ li {
     display:inline;
 }
 
-em {
+ul .nav-hebergements {
     width: 112px;
     height: 19px;
     top: 16px;
@@ -71,6 +71,10 @@ em {
     color: rgba(0, 101, 252, 1);
     border-top: 2px rgba(0, 101, 252, 1) solid; 
     padding-top: 28px;
+}
+
+ul .nav-hebergements a {
+    color: rgba(0, 101, 252, 1);
 }
 
 .act {
@@ -348,7 +352,7 @@ h3 {
     object-fit: cover;
 }
 
-.Hotel {    
+.Hotel {   
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
@@ -799,57 +803,106 @@ footer {
 @media screen and (max-width: 480px) {
     .main-container {
         width: 100%;
+        padding: 0;
     }
     header {
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         padding: 0;
+        display: flex;
+        flex-direction: column;
     }
     header img {
         width: 100%;
         text-align: center;
         padding: 0;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
     }
-    em {
+    nav a {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        gap: 15px;
+    }
+    nav li {
+        padding: 0;
+        margin: 0;
+    }
+    nav .nav-hebergements {
         text-align: center;
         font-style: normal;
-        width: 100%;
+        width: 50%;
         color: rgba(0, 101, 252, 1);
         border-bottom: 2px rgba(0, 101, 252, 1) solid;
         padding: 0;
         margin: 0;
         padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
         border-top: none;  
     }
-    nav, ul {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+    nav .nav-hebergements .act {
+        display: flex;
+        flex: auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav .act {
+        text-align: center;
+        width: 50%;
+        border-bottom: 2px grey solid;
+        padding-bottom: 10px;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    nav li {
+        padding: 0;
+        margin: 0;
+    }
+    .title-filtre {
         width: 100%;
         display: flex;
         padding: 0;
         margin: 0;  
     }
-    .act {  
-        text-align: center;
-        font-style: normal;
-        width: 100%;
-        border-bottom: 2px #f2f2f2 solid; 
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
-    }
     h1 {
-        width: 100%;
+        width: 90%;
         padding: 0;
-        padding-top: 30px;
+        padding-top: 20px;
+        margin-left: 10px;
+    }
+    h2 {
+        width: 90%;
+        padding: 0;
+        margin-left: 10px;
     }
     .info_group {
         width: auto;
     }
     .research-box {
-        width: auto;
-        display: flex;
+        width: 90%;
+        margin-left: 10px;
     }
     #button-research {
         display: none;
@@ -857,52 +910,82 @@ footer {
     #icon-glass {
         display: flex;
     }
+    h5 {
+        margin-left: 10px;
+    }
+    .barre_filtre ul {
+        width: 100%;
+        padding: 0;
+        gap: 0;
+        display: flex;
+        justify-content: space-around;
+    }
     .title-filtre li {
+        margin-top: 20px;
         width: 30%;
         height: auto;
         display: flex;
         flex-wrap: nowrap;
-        font-size: 12px;
+        font-size: 14px;
         gap: 5px;
     }
     .Pepite {
         white-space: nowrap;
     }
+    .info {
+        width: 90%;
+        padding-left: 10px;
+    }
+    h3 {
+        width: 100%;
+    }
     .populaires {
-        width: 130%;
+        width: 100%;
         padding-bottom: 5px;
     }
     .Hotel-marseille{
         background-color: white;
         width: 100%;
     }
-    .Hotel-marseille .hotel {
-        width: 100%;
+    .Hotel-marseille .Hotel {
+        width: 95%;
     }
-    .hotel img {
+    .Hotel-marseille img {
+        width: 100%;
         margin: 0;
         padding: 0;   
+    }
+    .Hotel-marseille .Hotel-content {
+        width: 100%;
     }
     .hebergements {
         order: 2;
         width: 100%;
         padding: 0;
-        padding-left: 2px;
+        margin-left: 10px;
         background-color: white;
     }
     .title-activités {
+        width: 90%;
         margin: 0;
         padding: 0;
         padding-bottom: 15px;
+        padding-left: 10px;
     }
     .populaires-cards {
-        width: 130%;
+        width: 100%;
+        padding: 0;
         padding-bottom: 10px;
+        gap: 0;
+        margin: 0;
     }
     .card {
+        width: 90%;
         height: auto;
+        margin-left: 5px;
     }
     #Activit-marseille {
+        width: 100%;
         padding-bottom: 150px;
     }
     .photo-activités .photo-marseille img {
@@ -915,13 +998,17 @@ footer {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        gap: 20px;  
+        gap: 20px;
+        width: 90%;
+        padding-left: 20px;  
     }
     .photo-marseille {
         height: 150px;
     }
     .footer-bloc {
-        padding: 0;
+        width: 90%;
+        padding-top: 30px;
+        padding-left: 10px;
     }
 }
 
