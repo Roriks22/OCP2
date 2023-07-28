@@ -68,13 +68,15 @@ ul .nav-hebergements {
     letter-spacing: 0em;
     text-align: center;
     font-style: normal;
-    color: rgba(0, 101, 252, 1);
-    border-top: 2px rgba(0, 101, 252, 1) solid; 
+    color: black;
+    border-top: 2px #f2f2f2 solid; 
     padding-top: 28px;
 }
 
-ul .nav-hebergements a {
-    color: rgba(0, 101, 252, 1);
+ul .nav-hebergements a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding-top: 28px;
 }
 
 .act {
@@ -91,6 +93,14 @@ ul .nav-hebergements a {
     text-align: center;
     margin-left: 68px;
     color:black;
+    border-top: 2px #f2f2f2 solid; 
+    padding-top: 28px;
+}
+
+ul .act a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding-top: 28px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -645,11 +655,11 @@ footer {
 
 /****** Media queries ***********/
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1438px) {
     .main-container {
-      width: 100%;
+        width: 100%;
     }
-
+    
     #info-hebergements {
         width: 100%;
         display: inline-flex;
@@ -657,6 +667,15 @@ footer {
     }
     .hebergements {
         width: 100%;
+    }
+    .Hotel-marseille {
+        width: auto;
+    }
+    .Hotel {
+        width: 45%;
+    }
+    .Hotel img {
+        width: 98%;
     }
     .populaires {
         width: 100%;
@@ -718,15 +737,31 @@ footer {
 }
 
 @media screen and (max-width: 950px){
+    #info-hebergements {
+        width: 100%;
+    }
+    .hebergements {
+        width: 100%;
+    }
+    .Hotel-marseille {
+        width: auto;
+    }
+    .Hotel {
+        width: 45%;
+    }
+    .Hotel img {
+        width: 98%;
+    }
     .populaires {
         width: 100%;
     }
     .populaires-cards {
+        width: auto;
         display: flex;
         flex-direction: column;
     }
     .card {
-        width: 70%;
+        width: auto;
     }
     .card-rating {
         padding: 0;
@@ -844,14 +879,18 @@ footer {
         text-align: center;
         font-style: normal;
         width: 50%;
-        color: rgba(0, 101, 252, 1);
-        border-bottom: 2px rgba(0, 101, 252, 1) solid;
+        border-bottom: 2px #f2f2f2 solid;
         padding: 0;
         margin: 0;
         padding-bottom: 10px;
         padding-left: 40px;
         padding-right: 40px;
         border-top: none;  
+    }
+    ul .nav-hebergements a:hover {
+        color: #0065FC;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 10px;
     }
     nav {
         width: 100%;
@@ -871,10 +910,17 @@ footer {
         text-align: center;
         width: 50%;
         border-bottom: 2px #F2F2F2 solid;
+        padding: 0;
         padding-bottom: 10px;
         margin: 0;
         padding-left: 40px;
         padding-right: 40px;
+        border-top: none;
+    }
+    ul .act a:hover {
+        color: #0065FC;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 10px;
     }
     nav li {
         padding: 0;
