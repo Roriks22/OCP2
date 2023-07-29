@@ -670,9 +670,11 @@ footer {
     }
     .Hotel-marseille {
         width: auto;
+        display: flex;
+        flex-direction: row;
     }
     .Hotel {
-        width: 45%;
+        width: 30%;
     }
     .Hotel img {
         width: 98%;
@@ -733,6 +735,20 @@ footer {
     }
     .Pepite {
         width: auto;
+    }
+    .hebergements {
+        width: 100%;
+    }
+    .Hotel-marseille {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .Hotel {
+        width: 30%;
+    }
+    .Hotel img {
+        width: 98%;
     }
 }
 
